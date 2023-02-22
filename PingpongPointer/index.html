@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pingpong.css">
+</head>
+
+<body>
+    <div>
+        <section>
+            <div id='container'>
+                <div id="contents">
+                    <img src="https://gifimage.net/wp-content/uploads/2018/11/ping-pong-gif-anim%C3%A9.gif" alt="">
+                    <header class="content-header">
+                        <p>Pingpong Score Keeper</p>
+                    </header>
+                    <form action="/name" id="playerNameFrom">
+                        <input id="p1Name" type="text" name="p1Name" placeholder="p1 Nickname">
+                        <input id="p2Name" type="text" name="p2Name" placeholder="p2 Nickname">
+                        <button id='nameEnter'>Type Both Name</button>
+                    </form>
+                    <div id='score-continer' style="text-align:center;">
+                        <h1 id="NameTagText"><span id="playerOne">0</span> to <span id="playerTwo">0</span></h1>
+                        <p>Use the buttons below to keep score</p>
+                        <label for="score">
+                            <h2>Playing To</h2>
+                            <select name="score" id="score">
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <button id="playerOneScoreBtn">+1 Player One</button>
+                        <button id="playerOneScoreMinusBtn">-1 Player One</button>
+
+                        <button id="ResetBtn">Reset</button>
+                        <button id="playerTwoScoreBtn">+1 Player Two</button>
+
+                        <button id="playerTwoScoreMinusBtn">-1 Player Two</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
